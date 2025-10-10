@@ -21,21 +21,21 @@
 
 ```
 fedgie-multi/
-  README.md
-  requirements.txt
-  train.py
-  fedgie/
-    __init__.py
-    utils.py
-    server.py
-    client.py
-    data/
-      __init__.py
-      partition.py
-    models/
-      __init__.py
-      mlp.py
-      cnn.py
+├── README.md
+├── requirements.txt
+├── train.py
+└── fedgie/
+    ├── __init__.py
+    ├── utils.py
+    ├── server.py
+    ├── client.py
+    ├── data/
+    │   ├── __init__.py
+    │   └── partition.py
+    └── models/
+        ├── __init__.py
+        ├── mlp.py
+        └── cnn.py
 ```
 - `train.py`: entrypoint (CLI, initialization, training, evaluation)
 - `fedgie/server.py`: global model, broadcast, aggregation, evaluation
