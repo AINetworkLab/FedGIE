@@ -1,0 +1,10 @@
+# =============================================
+# FedGIE — requirements (CUDA 12.1 wheels)
+# Use: pip install -r requirements-gpu-cu121.txt
+# =============================================
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+numpy>=1.24.0,<3.0.0
+pillow>=10.0.0,<12.0.0
+torch==2.4.1+cu121
+torchvision==0.19.1+cu121
