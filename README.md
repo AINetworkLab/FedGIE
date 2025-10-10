@@ -191,7 +191,7 @@ A: Yes. Set `--device cuda` or leave `--device auto` to use GPU if available.
 ```bibtex
 @misc{fedgie2025,
   title        = {Analytical Layer-wise Decomposition with Moore--Penrose Pseudoinverse for Stable Gradient-Free Federated Learning},
-  author       = {Xiong, Ruoyan and Li, Yuepeng and Li, Zhexiong and Gu, Lin and Zeng, Deze and Chen, Quan and Guo, Minyi},
+  author       = {Ruoyan XIONG, Yuepeng LI, Zhexiong LI, Lin GU, Deze ZENG, Quan CHEN & Minyi GUO},
   year         = {2025},
   note         = {Code available at: https://github.com/AINetworkLab/FedGIE}
 }
