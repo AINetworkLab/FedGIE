@@ -6,7 +6,7 @@
 
 ---
 
-## Features
+## ✨ Features
 
 - Closed-form per-layer updates (weights & bias via least squares with pseudoinverse).
 - Top-down feedback projection to supervise lower layers without gradients.
@@ -17,7 +17,7 @@
 
 ---
 
-## Repository Structure
+## 🧱 Repository Layout
 
 ```
 fedgie-multi/
@@ -45,7 +45,7 @@ fedgie-multi/
 
 ---
 
-## Installation
+## 🔧 Installation
 
 **Requirements**
 - Python ≥ 3.9
@@ -60,7 +60,7 @@ If you need GPU acceleration, install a CUDA-matching PyTorch wheel per the offi
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### MLP + MNIST
 ```bash
@@ -80,7 +80,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Command-Line Arguments
+## ⚙️ Command-Line Arguments
 
 | Argument     | Type   | Default | Description                                                                     |
 |--------------|--------|---------|---------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Method Overview
+## 🧠 Method Overview
 
 **Goal.** Avoid unstable black-box gradient estimation in federated settings by replacing backprop with structured, per-layer least-squares updates.
 
@@ -113,7 +113,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Datasets & Partitioning
+## 📊 Datasets & Partitioning
 
 - Datasets: MNIST, Fashion-MNIST, CIFAR-10 (auto-downloaded to `./data/`).
 - Non-IID Split: Dirichlet(α) over label distributions into `--clients` partitions.
@@ -121,7 +121,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Reproducibility
+## 🔎 Reproducibility
 
 - Use `--seed` to fix randomness.
 - The script prints test accuracy each round:
@@ -137,7 +137,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Extending the Project
+## 🧩 Extending the Project
 
 **Add a new model**
 - Create a file under `fedgie/models/` (e.g., `resnet.py`) exposing:
@@ -150,7 +150,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Known Limitations
+## ⚠️ Known Limitations
 
 - Memory/compute: `torch.linalg.pinv` may be heavy for large layers; reduce `--batch` or model width if needed.
 - Pooling/strides: The CNN example focuses on a minimal consistent setup. When adding pooling or different strides/dilations, ensure `unfold/fold` parameters exactly match the convolution configuration.
@@ -158,7 +158,7 @@ TorchVision will auto-download datasets into `./data/`.
 
 ---
 
-## Requirements
+## 📦 Requirements
 
 `requirements.txt` contains:
 ```
@@ -169,7 +169,7 @@ For GPU builds, install CUDA-compatible wheels as per PyTorch’s official guide
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Q: Why no backprop or optimizer?**  
 A: Each layer update is a closed-form least-squares solution, so no gradient steps are needed.
@@ -182,7 +182,7 @@ A: Yes. Set `--device cuda` or leave `--device auto` to use GPU if available.
 
 ---
 
-## License & Citation
+## 📜 License & Citation
 
 - License: Add a `LICENSE` file of your choice (e.g., MIT) at the repository root.
 - Citation: If this repository is useful in your research or product, please cite it. Example:
@@ -197,6 +197,6 @@ A: Yes. Set `--device cuda` or leave `--device auto` to use GPU if available.
 
 ---
 
-## Contact
+## 📬 Contact
 
 For enhancements (e.g., residual blocks, batch normalization, sparsity, asynchronous aggregation) or issues, please open a GitHub Issue.
