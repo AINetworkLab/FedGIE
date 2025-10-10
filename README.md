@@ -1,4 +1,4 @@
-# FedGIE — Gradient-Free Federated Learning via Layer-wise Least Squares
+# FedGIE — Analytical Layer-wise Decomposition with Moore-Penrose Pseudoinverse for Stable Gradient-free Federated Learning
 
 **FedGIE** is a gradient-free federated learning framework. Each layer update is solved as a **least-squares** problem with a **Moore–Penrose pseudoinverse**, avoiding backpropagation and black-box gradient estimation. A top-down **feedback projection** plus a ReLU **diagonal Jacobian correction** stabilizes update directions under strong Non-IID data. The repository includes both **MLP** and **CNN** reference models and supports **MNIST**, **Fashion-MNIST**, and **CIFAR-10**.
 
