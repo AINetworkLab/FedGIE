@@ -188,10 +188,10 @@ A: Yes. Set `--device cuda` or leave `--device auto` to use GPU if available.
 - Citation: If this repository is useful in your research or product, please cite it. Example:
 ```bibtex
 @misc{fedgie2025,
-  title  = {FedGIE: Gradient-Free Federated Learning via Layer-wise Least Squares},
-  author = {Your Name and Coauthors},
-  year   = {2025},
-  note   = {Code available at: https://github.com/your-org/your-repo}
+  title        = {Analytical Layer-wise Decomposition with Moore--Penrose Pseudoinverse for Stable Gradient-Free Federated Learning},
+  author       = {Xiong, Ruoyan and Li, Yuepeng and Li, Zhexiong and Gu, Lin and Zeng, Deze and Chen, Quan and Guo, Minyi},
+  year         = {2025},
+  note         = {Code available at: https://github.com/AINetworkLab/FedGIE}
 }
 ```
 
