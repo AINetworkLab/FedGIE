@@ -201,6 +201,4 @@ A: Yes. Set `--device cuda` or leave `--device auto` to use GPU if available.
 
 ## 📬 Contact
 
-> For enhancements (e.g., residual blocks, batch normalization, sparsity, asynchronous aggregation) or issues, please open a GitHub Issue.
-
-> Please feel free to contact us at ryxiong@cug.edu.cn
+> Feel free to contact us at ryxiong@cug.edu.cn
