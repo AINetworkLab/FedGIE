@@ -4,8 +4,7 @@
 
 > All `.py` sources are intentionally **comment-free** as requested.
 
-> Manuscript status: This work has been submitted to Science China Information Sciences and is currently under peer review.
-
+> Manuscript status: This work has been accepted for publication in Science China Information Sciences.
 ---
 
 ## ✨ Features
